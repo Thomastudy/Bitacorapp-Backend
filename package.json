@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/app.js --mode dev",
+    "start": "node --watch src/app.js --mode dev",
     "prod": "node --watch src/app.js --mode prod"
   },
   "keywords": [],
