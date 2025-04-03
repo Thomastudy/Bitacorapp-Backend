@@ -11,7 +11,7 @@ import viewsRouter from "./routes/views.router.js";
 import boatsRouter from "./routes/boats.router.js";
 // Config
 import configObject from "./config/config.js";
-const { PORT } = configObject;
+const { PORT, FRONT_URL } = configObject;
 
 const app = express();
 
@@ -29,7 +29,7 @@ app.use(express.static("./src/public"));
 // usar las cookies
 app.use(cookieParser());
 // CORS (Cross-Origin Resource Sharing) es un mecanismo de seguridad
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: FRONT_URL, credentials: true }));
 
 /*////////////////////
 

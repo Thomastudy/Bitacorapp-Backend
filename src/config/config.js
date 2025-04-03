@@ -11,6 +11,7 @@ const configObject = {
   MONGO_URL: process.env.MONGO_URL,
   PORT: process.env.PORT,
   JWT_SECRET: process.env.JWT_SECRET,
+  FRONT_URL: process.env.FRONT_URL,
 };
 
 export default configObject;
