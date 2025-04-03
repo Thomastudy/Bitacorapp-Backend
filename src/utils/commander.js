@@ -1,0 +1,11 @@
+import { Command } from "commander";
+
+const program = new Command();
+
+//1 - commando // 2- descripcion // 3- valor default
+program.option("--mode <mode>", "entorno de trabajo", "dev");
+program.parse();
+
+console.log("commander ", program.opts());
+
+export default program;
