@@ -29,7 +29,7 @@ app.use(express.static("./src/public"));
 // usar las cookies
 app.use(cookieParser());
 // CORS (Cross-Origin Resource Sharing) es un mecanismo de seguridad
-app.use(cors({ origin: "https://bitacapp.vercel.app", credentials: true }));
+app.use(cors({ origin: FRONT_URL, credentials: true }));
 
 /*////////////////////
 

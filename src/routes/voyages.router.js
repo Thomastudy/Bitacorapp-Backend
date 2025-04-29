@@ -4,7 +4,9 @@ import voyageController from "../controllers/voyage.controller.js";
 const router = Router();
 
 // Rutas publicas
+// este deberia no ponerlo y deberia poner authenticacion para ver los voyages. Con esta ruta estoy vulnerable a que me saquen todos los datos
 router.get("/", voyageController.getAllVoyages);
+
 router.get("/:userId", voyageController.getVoyagesByUser);
 router.get("/detail/:id", voyageController.getVoyageById);
 

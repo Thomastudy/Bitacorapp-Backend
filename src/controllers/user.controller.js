@@ -130,7 +130,7 @@ class UserController {
 
       return res.status(500).json({
         status: "error",
-        message: "Error interno del servidor" + error.message,
+        message: "Error interno del servidor " + error.message,
       });
     }
   }
