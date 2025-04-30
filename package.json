@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch src/app.js --mode dev",
-    "prod": "node --watch src/app.js --mode prod"
+    "start": "node --watch src/app.js --mode prod",
+    "dev": "node --watch src/app.js --mode dev"
   },
   "keywords": [],
   "author": "",
