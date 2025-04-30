@@ -1,15 +1,15 @@
 import dotenv from "dotenv";
 import program from "../utils/commander.js";
 
-const { mode = "prod" } = program.opts();
+// const { mode = "prod" } = program.opts();
 
-dotenv.config({
-  path: mode === "prod" ? "./.env.prod" : "./.env.dev",
-});
+// dotenv.config({
+//   path: mode === "prod" ? "./.env.prod" : "./.env.dev",
+// });
 
 
 
-// dotenv.config();
+dotenv.config();
 
 const configObject = {
   MONGO_URI: process.env.MONGO_URI,
