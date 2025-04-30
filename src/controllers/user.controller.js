@@ -50,7 +50,7 @@ class UserController {
         res.cookie("userCookieToken", token, {
           httpOnly: true,
           secure: true,
-          sameSite: "strict",
+          sameSite: "none",
           maxAge: 1000 * 60 * 60 * 24, //1h
         });
         return res.status(201).json({
@@ -105,7 +105,7 @@ class UserController {
       res.cookie("userCookieToken", token, {
         httpOnly: true,
         secure: true,
-        sameSite: true,
+        sameSite: "none",
         maxAge: 1000 * 60 * 60 * 24, //1h
       });
       return res.status(200).json({
@@ -161,7 +161,7 @@ class UserController {
     res.clearCookie("userCookieToken", {
       httpOnly: true,
       secure: true,
-      sameSite: true,
+      sameSite: "none",
       path: "/",
     });
 
