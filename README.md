@@ -20,21 +20,7 @@ El **backend** de Bitacorapp está construido como una API RESTful sobre **Node.
   - Despliegue a AWS (Elastic Beanstalk / ECS) o cualquier proveedor que soporte contenedores
 
 ### Estructura de carpetas
-/backend
-├── src
-│ ├── config/ # Variables de entorno y ajustes globales
-│ ├── controllers/ # Lógica de cada endpoint
-│ ├── models/ # Esquemas Mongoose
-│ ├── routes/ # Definición de rutas (e.g. users.js, voyages.js)
-│ ├── middlewares/ # Auth, validaciones y manejo de errores
-│ ├── services/ # Funciones de negocio reutilizables
-│ ├── utils/ # Helpers y utilidades
-│ └── app.js # Inicialización de Express
-├── tests/ # Pruebas unitarias y de integración
-├── .env.example # Ejemplo de variables de entorno
-├── docker-compose.yml # Configuración para contenedores
-├── Dockerfile # Imagen del API
-└── package.json
+<pre> ```plaintext /backend ├── src │ ├── config/ # Variables de entorno │ ├── controllers/ # Lógica de endpoints │ ├── models/ # Esquemas Mongoose │ ├── routes/ # Definición de rutas │ ├── middlewares/ # Auth y validaciones │ ├── services/ # Funciones de negocio │ ├── utils/ # Helpers │ └── app.js # Inicialización de Express ├── tests/ # Pruebas unitarias ├── .env.example # Ejemplo de variables ├── docker-compose.yml # Contenedores ├── Dockerfile # Imagen del API └── package.json ``` </pre>
 
 ### Principales endpoints
 - **Auth**  
